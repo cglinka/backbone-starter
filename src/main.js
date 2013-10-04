@@ -27,7 +27,7 @@
       stock.updatePrice(quote.AskRealtime);
     });
     setTimeout(updateLoop, 3000);
-  }
+  };
 
   var updateLoop = function () {
     $.ajax({

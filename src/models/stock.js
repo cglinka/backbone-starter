@@ -4,6 +4,8 @@
     updatePrice: function (newPrice) {
       console.log('Updating', this.get('name'), 'price to:', newPrice);
       // TODO
+      var numPrice = parseFloat(newPrice);
+      this.set({ newprice: numPrice});
     }
   });
 
