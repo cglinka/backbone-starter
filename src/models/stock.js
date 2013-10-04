@@ -9,5 +9,4 @@
       // console.log('num price?', this.get('price'))
     }
   });
-
 })();
