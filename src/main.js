@@ -1,3 +1,15 @@
+(function () {
+  /* TODO: WRITE CODE HERE */
 
-// Remove this line when you start working
-alert('Hello World!');
+  var product = new Product({
+    name: 'A PRODUCT NAME'
+  });
+
+  var productView = new ProductView({
+    model: product
+  });
+
+  productView.render();
+
+  console.log('productView.el', productView.el);
+})();
