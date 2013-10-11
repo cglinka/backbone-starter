@@ -9,5 +9,9 @@ _.templateSettings = {
 _.mixin({
   uselessMath: function (x, y, z) {
     return x + y * z;
+  },
+  // Function for pulling the right underscore template from the HTML file.
+  getTemplate: function (name) {
+    return _.template( $('#templates .' + name).html() );
   }
 });
