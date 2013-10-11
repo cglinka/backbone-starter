@@ -4,9 +4,11 @@
     // initialize: function (options) {
     //   this.bar = 'init val';
     // }
+    template: _.getTemplate('product'),
 
     render: function () {
-      $(this.el).html(this.model.get('name'));
+      var newProductHtml = this.template( this.model.toJSON() );
+      $(this.el).html(newProductHtml);
     }
   });
 
