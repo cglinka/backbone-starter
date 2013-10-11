@@ -6,7 +6,7 @@
     // }
 
     render: function () {
-      $(this.el).hmtl( this.model.get('name') );
+      $(this.el).html(this.model.get('name'));
     }
   });
 
